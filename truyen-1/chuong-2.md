@@ -1,8 +1,4 @@
-Dưới đây là nội dung của chương 2 [表白99次，校花急了 - 第2章 他不会不来了吧](https://www.69shuba.com/txt/46335/31038040) được dịch sang tiếng Việt:
-
----
-
-## Chương 2: Cậu ấy sẽ không không đến chứ?
+Chương 2: Cậu ấy sẽ không không đến chứ?
 
 Thực ra, một tiếng trước.
 

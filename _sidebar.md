@@ -13,5 +13,6 @@
   * [Chương 9: Tên chương](truyen-1/chuong-009.md)
   * [Chương 10: Tên chương](truyen-1/chuong-10.md)
   * [Chương 11: Tên chương](truyen-1/chuong-11.md)
+  * [Chương 12: Tên chương](truyen-1/chuong-12.md)
 * **Bộ truyện 2: Tên Truyện Thứ Hai**
   * [Chương 1: Mở màn](truyen-2/chuong-1.md)

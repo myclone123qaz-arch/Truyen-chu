@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
   <style>
-    /* Tùy chỉnh font chữ và độ rộng khung đọc cho đỡ mỏi mắt */
     .markdown-section {
       max-width: 800px;
       font-size: 18px;
@@ -16,19 +15,30 @@
 </head>
 <body>
   <div id="app">Đang tải truyện...</div>
+  
   <script>
     window.$docsify = {
       name: 'Tủ Truyện Của Tôi',
-      loadSidebar: true,     // Bật thanh mục lục bên trái
-      subMaxLevel: 2,        // Tự động nhận diện tiêu đề phụ
-      auto2top: true,        // Tự động cuộn lên đầu trang khi chuyển chương
+      // KHÔNG bật loadSidebar: true nữa vì plugin sẽ tự sinh
+      auto2top: true,
       search: {
         placeholder: 'Tìm tên truyện hoặc chương...',
         noData: 'Không tìm thấy kết quả!'
-      }
+      },
+      // Cấu hình riêng cho plugin tự động sinh sidebar
+      loadSidebar: false, 
+      // Hoặc nếu dùng plugin auto-sidebar, cấu hình thêm ở đây nếu cần
     }
   </script>
+
+  <!-- 1. Thư viện cốt lõi của Docsify -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  
+  <!-- 2. Thêm Plugin tự động tạo Sidebar từ cấu trúc thư mục -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-auto-sidebar@dir"></script>
+
+  <!-- 3. Plugin tìm kiếm -->
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
 </body>
 </html>

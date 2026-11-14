@@ -1,44 +1,24 @@
-<!DOCTYPE html>
-<html lang="vi">
-<head>
-  <meta charset="UTF-8">
-  <title>Tủ Truyện Cá Nhân</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
-  <style>
-    .markdown-section {
-      max-width: 800px;
-      font-size: 18px;
-      line-height: 1.8;
-    }
-  </style>
-</head>
-<body>
-  <div id="app">Đang tải truyện...</div>
-  
-  <script>
+<script>
     window.$docsify = {
       name: 'Tủ Truyện Của Tôi',
-      // KHÔNG bật loadSidebar: true nữa vì plugin sẽ tự sinh
       auto2top: true,
+      maxLevel: 4,
+      subMaxLevel: 2,
+      // Cấu hình bắt buộc để bật tự động sinh sidebar
+      loadSidebar: true, 
+      autoHeader: true,
       search: {
         placeholder: 'Tìm tên truyện hoặc chương...',
         noData: 'Không tìm thấy kết quả!'
-      },
-      // Cấu hình riêng cho plugin tự động sinh sidebar
-      loadSidebar: false, 
-      // Hoặc nếu dùng plugin auto-sidebar, cấu hình thêm ở đây nếu cần
+      }
     }
   </script>
 
-  <!-- 1. Thư viện cốt lõi của Docsify -->
+  <!-- Thư viện cốt lõi -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
   
-  <!-- 2. Thêm Plugin tự động tạo Sidebar từ cấu trúc thư mục -->
-  <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
+  <!-- Plugin tự động tạo sidebar chuẩn xác nhất -->
   <script src="//cdn.jsdelivr.net/npm/docsify-auto-sidebar@dir"></script>
 
-  <!-- 3. Plugin tìm kiếm -->
+  <!-- Plugin tìm kiếm -->
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
-</body>
-</html>
